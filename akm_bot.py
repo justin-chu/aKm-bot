@@ -16,7 +16,7 @@ def bot_login():
 
 #Run the bot
 def run_bot(r):
-	subreddit = r.subreddit("OverwatchCirclejerk+OverwatchTMZ+Overwatchmemes")
+	subreddit = r.subreddit("OverwatchCirclejerk+OverwatchTMZ+Overwatchmemes+Overwatch_Memes+Overwatch+OverwatchLeague")
 	print("Obtaining comments...")
 	for comment in subreddit.stream.comments():
 		with open("comments_replied_to.txt") as file:
@@ -46,10 +46,6 @@ def run_bot(r):
 				print("Replied to " + comment.id)
 				print("Sleeping for 5 seconds")
 				time.sleep(5)
-
-	print("Sleeping for 10 seconds")
-	time.sleep(10)
-
 
 def calculate(n):
 	converted = n * 224
