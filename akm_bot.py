@@ -16,7 +16,7 @@ def bot_login():
 
 #Run the bot
 def run_bot(r):
-	subreddit = r.subreddit("DallasFuel+NYXL+BostonUprising+FloridaMayhem+HoustonOutlaws+lagladiators+LAValiant+LondonSpitfire+PHL_Fusion+SeoulDynasty+SFShock_OW+ShanghaiDragons+OverwatchCirclejerk+OverwatchTMZ+Overwatchmemes+Overwatch_Memes+Overwatch+OverwatchLeague")
+	subreddit = r.subreddit("Test+DallasFuel+NYXL+BostonUprising+FloridaMayhem+HoustonOutlaws+lagladiators+LAValiant+LondonSpitfire+PHL_Fusion+SeoulDynasty+SFShock_OW+ShanghaiDragons+OverwatchCirclejerk+OverwatchTMZ+Overwatchmemes+Overwatch_Memes+Overwatch+OverwatchLeague")
 	print("Obtaining comments...")
 	for comment in subreddit.stream.comments():
 		with open("comments_replied_to.txt") as file:
@@ -42,7 +42,7 @@ def run_bot(r):
 
 				calculate(n)
 				print("String with \"akm\" found in comment " + comment.id)
-				comment.reply(calculate(n) + "\n\n___\n\n^Beep ^boop. ^I ^am ^a ^bot ^that ^automatically ^converts ^[aKm](https://i.redd.it/tr1uwg62rus01.gif) ^to ^time. ^PM ^/u/JustinChuffy ^with ^issues ^or ^feedback!")
+				comment.reply(*calculate(n)* + "\n\n___\n\n ^(Beep boop. I am a bot that automatically converts) ^[aKm](https://i.redd.it/tr1uwg62rus01.gif) ^to ^time. ^PM ^[/u/Justinchuffy](https://www.reddit.com/user/justinchuffy) ^with ^issues ^or ^feedback!")
 				print("Replied to " + comment.id)
 				print("Sleeping for 5 seconds")
 				time.sleep(5)
