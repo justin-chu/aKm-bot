@@ -16,7 +16,7 @@ def bot_login():
 
 #Run the bot
 def run_bot(r):
-	subreddit = r.subreddit("OverwatchCirclejerk+OverwatchTMZ+Overwatchmemes+Overwatch_Memes+Overwatch+OverwatchLeague")
+	subreddit = r.subreddit("DallasFuel+NYXL+BostonUprising+FloridaMayhem+HoustonOutlaws+lagladiators+LAValiant+LondonSpitfire+PHL_Fusion+SeoulDynasty+SFShock_OW+ShanghaiDragons+OverwatchCirclejerk+OverwatchTMZ+Overwatchmemes+Overwatch_Memes+Overwatch+OverwatchLeague")
 	print("Obtaining comments...")
 	for comment in subreddit.stream.comments():
 		with open("comments_replied_to.txt") as file:
