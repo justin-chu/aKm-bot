@@ -42,7 +42,7 @@ def run_bot(r):
 
 				calculate(n)
 				print("String with \"akm\" found in comment " + comment.id)
-				comment.reply(calculate(n) + "\n\n___\n\n^(Beep boop. I am a bot that automatically converts [aKm](https://i.redd.it/tr1uwg62rus01.gif) to time. PM /u/JustinChuffy with issues or feedback!)")
+				comment.reply(calculate(n) + "\n\n___\n\n^Beep ^boop. ^I ^am ^a ^bot ^that ^automatically ^converts ^[aKm](https://i.redd.it/tr1uwg62rus01.gif) ^to ^time. ^PM ^/u/JustinChuffy ^with ^issues ^or ^feedback!")
 				print("Replied to " + comment.id)
 				print("Sleeping for 5 seconds")
 				time.sleep(5)
